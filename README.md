@@ -7,7 +7,7 @@ Conclusions-
 - Build RPi kernel sources before installing the driver.
 - The driver once installed cannot be removed ( rmmod removes the driver but reloads it again). This makes debugging the code a tedious      task.
 - DO NOT connect resistors to SDIO connections as they do not let sufficient current to flow to the esp module. 
-- This driver will not work with 
+- This driver (https://github.com/al177/esp8089) will not work with 
    - NodeMCU as NodeMCU pulls down GPIO15 module which renders it incapable to boot in SDIO mode. Pulled down GPIO15 is for booting in 
       flash mode.
    - ESP01 as ESP01 does not have SDIO pins.
